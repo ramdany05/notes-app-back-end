@@ -6,7 +6,9 @@
     "nodemon": "^3.1.0"
   },
   "scripts": {
-    "start": "nodemon ./src/server.js"
+    "start-prod": "NODE_ENV=production node ./src/server.js",
+    "start-dev": "nodemon ./src/server.js",
+    "lint": "eslint ./src"
   },
   "name": "notes-app-back-end",
   "version": "1.0.0",
